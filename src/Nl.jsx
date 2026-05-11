@@ -557,7 +557,7 @@ export default function Nl() {
                 </div>
                 <div className="quote-divider"/>
                 <div className="quote-author">
-                  <span className="quote-author-name">Albert Einstein</span>
+                  <span className="quote-author-name">Albert Einstein </span>
                   <span className="quote-author-title">Theoretical Physicist · 1879 – 1955</span>
                 </div>
               </div>

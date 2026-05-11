@@ -192,14 +192,14 @@ export default function En() {
       <div className="s-divider"/>
       <section className="section" id="skills">
         <div className="section-inner">
-          <R><p className="s-label">02 / Vaardigheden</p></R>
-          <Words text="Technische Expertise" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">02 / Skills</p></R>
+          <Words text="Technical Expertise" className="s-heading" delay={0.05}/>
           <div className="skills-grid">
-            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programmeertalen</div><span className="skill-cat">Kern</span></div><div className="skill-tags"><span className="skill-tag">Java</span><span className="skill-tag">C</span><span className="skill-tag">JavaScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span><span className="skill-tag">C#</span></div></div></R>
-            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operaties</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span></div></div></R>
-            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Opslag</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">MongoDB</span><span className="skill-tag">MySQL</span></div></div></R>
-            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">WebSockets</span></div></div></R>
-            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Frontend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">HTML</span><span className="skill-tag">CSS</span></div></div></R>
+            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programming Languages</div><span className="skill-cat">Core</span></div><div className="skill-tags"><span className="skill-tag">Java</span><span className="skill-tag">C</span><span className="skill-tag">JavaScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span><span className="skill-tag">C#</span></div></div></R>
+            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operations</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span></div></div></R>
+            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Storage</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">MongoDB</span><span className="skill-tag">MySQL</span></div></div></R>
+            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architecture</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">WebSockets</span></div></div></R>
+            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Frontend Engineering</div><span className="skill-cat">Architecture</span></div><div className="skill-tags"><span className="skill-tag">HTML</span><span className="skill-tag">CSS</span></div></div></R>
 
           </div>
           {/* ── YOUTUBE ── */}
@@ -210,27 +210,26 @@ export default function En() {
                     <div className="yt-icon">▶</div>
                     <div className="yt-title-block">
                     <div className="yt-title">YouTube Content Creator</div>
-                    <div className="yt-sub-label">Sinds 2024</div>
+                    <div className="yt-sub-label">Since 2024</div>
                     </div>
                 </div>
                 <p className="yt-desc">
-                    Ik heb sinds 2024 een YouTube kanaal, waarop ik cinematografische focus- en studiemuziek plaats. Ik heb inmiddels meer dan 43.000 subscribers bereikt. Het kanaal combineert cinematic storytelling met productiviteit en richt zich op studenten, programmeurs en professionals die zich beter willen concentreren tijdens het werken of studeren. Door het opbouwen van dit platform heb ik waardevolle ervaring opgedaan.
-                </p>
+                  Since 2024 I have been running a YouTube channel dedicated to cinematic focus and study music, growing it to over 43,000 subscribers. The channel blends cinematic storytelling with productivity, targeting students, programmers and professionals looking to improve their concentration while working or studying. Building this platform from the ground up has given me hands-on experience in content creation, video editing and audience development.                </p>
                 <div className="yt-tags">
-                    <span className="yt-tag">Videobewerking</span>
+                    <span className="yt-tag">Video Editing</span>
                     <span className="yt-tag">Da Vinci Resolve</span>
                     <span className="yt-tag">GIMP</span>
                     <span className="yt-tag">Scripting</span>
                     <span className="yt-tag">Thumbnail Design</span>
                     <span className="yt-tag">SEO & Analytics</span>
-                    <span className="yt-tag">Kijkersbehoud</span>
+                    <span className="yt-tag">Viewer retention</span>
                 </div>
                 </div>
                 <div className="yt-stats">
-                <div className="yt-stat"><div className="yt-stat-n">43K</div><div className="yt-stat-l">Abonnees</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">25+</div><div className="yt-stat-l">Video's</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">2+</div><div className="yt-stat-l">Jaar actief</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">10M+</div><div className="yt-stat-l">Totale weergaven</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">43K</div><div className="yt-stat-l">Subscribers</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">25+</div><div className="yt-stat-l">Videos</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">2+</div><div className="yt-stat-l">Years active</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">10M+</div><div className="yt-stat-l">Total views</div></div>
                 </div>
             </div>
             </R>
@@ -241,28 +240,27 @@ export default function En() {
                 <div className="teach-header">
                     <div className="teach-icon">✏</div>
                     <div>
-                    <div className="teach-title">Studiebegeleider</div>
-                    <div className="teach-sub-label">Huiswerkbegeleiding · 4,5 Jaar</div>
+                    <div className="teach-title">Tutor</div>
+                    <div className="teach-sub-label">Homework Assistance · 4,5 Years</div>
                     </div>
                 </div>
                 <p className="teach-desc">
-                    Gedurende vier en een half jaar werkte ik als studiebegeleider bij ASL Huiswerkbegeleiding in Emmen, waarbij ik middelbare scholieren begeleid in vakken als wiskunde, natuurkunde en informatica.
-                </p>
+                  For four and a half years I worked as a tutor and study coach at ASL Huiswerkbegeleidig in Emmen, guiding secondary school students through subjects including mathematics, physics and computer science.                </p>
                 <div className="teach-tags">
-                    <span className="teach-tag">Wiskunde</span>
-                    <span className="teach-tag">Natuurkunde</span>
-                    <span className="teach-tag">Informatica</span>
-                    <span className="teach-tag">Lesplanning</span>
-                    <span className="teach-tag">1-op-1 Begeleiding</span>
-                    <span className="teach-tag">Groepslessen</span>
-                    <span className="teach-tag">Voortgangsmonitoring</span>
+                    <span className="teach-tag">Mathematics</span>
+                    <span className="teach-tag">Physics</span>
+                    <span className="teach-tag">Computing Science</span>
+                    <span className="teach-tag">Lesson planning</span>
+                    <span className="teach-tag">1-op-1 Guidance</span>
+                    <span className="teach-tag">Group Lessons</span>
+                    <span className="teach-tag">Progress monitoring</span>
                 </div>
                 </div>
                 <div className="teach-stats">
-                <div className="teach-stat"><div className="teach-stat-n">4,5</div><div className="teach-stat-l">Jaar</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">100+</div><div className="teach-stat-l">Leerlingen</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">3</div><div className="teach-stat-l">Vakken</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">VO</div><div className="teach-stat-l">Onderwijsniveau</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">4,5</div><div className="teach-stat-l">Years</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">100+</div><div className="teach-stat-l">Students</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">3</div><div className="teach-stat-l">Subjects</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">VO</div><div className="teach-stat-l">Education level</div></div>
                 </div>
             </div>
             </R>
@@ -270,11 +268,11 @@ export default function En() {
       </section>
      
 
-      {/* ── ONDERZOEK ── */}
+      {/* ── Research ── */}
       <div className="s-divider"/>
       <section className="section" id="research">
         <div className="section-inner">
-          <R><p className="s-label">03 / Onderzoek</p></R>
+          <R><p className="s-label">03 / Research</p></R>
           <Words text="Research Papers" className="s-heading" delay={0.05}/>
           <div className="papers-list">
 
@@ -414,21 +412,21 @@ export default function En() {
         </div>
       </section>
 
-      {/* ── SAMENVATTINGEN ── */}
+      {/* ── Summaries ── */}
       <div className="s-divider"/>
       <section className="section" id="summaries">
         <div className="section-inner">
-          <R><p className="s-label">04 / Samenvattingen</p></R>
-          <Words text="Samenvattingen" className="s-heading" delay={0.05}/>
-          <R delay={0.1}><p className="sum-intro">Tijdens mijn studies heb ik meerdere samenvattingen geschreven. Deze zal ik binnenkort publiceren</p></R>
+          <R><p className="s-label">04 / Summaries</p></R>
+          <Words text="Summaries" className="s-heading" delay={0.05}/>
+          <R delay={0.1}><p className="sum-intro">During my studies I have made multiple summaries. I will publish these soon</p></R>
           <div className="sum-grid">
 
             <R delay={0.00}>
               <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Voorbeeld</div><span className="sum-tag"></span></div>
-                <div className="sum-origin">Vak</div>
-                <p className="sum-body">Samenvatting</p>
-                <a href="#" className="sum-read">Lees volledig →</a>
+                <div className="sum-head"><div className="sum-title">Example</div><span className="sum-tag"></span></div>
+                <div className="sum-origin">Subject</div>
+                <p className="sum-body">Summary</p>
+                <a href="#" className="sum-read">Read →</a>
               </div>
             </R>
 
@@ -440,18 +438,18 @@ export default function En() {
       <div className="s-divider"/>
       <section className="section" id="experience">
         <div className="section-inner">
-          <R><p className="s-label">05 / Achtergrond</p></R>
-          <Words text="Opleiding & Ervaring" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">05 / Background</p></R>
+          <Words text="Education & Experience" className="s-heading" delay={0.05}/>
           <div className="tl-cols">
 
             <R>
-              <div className="tl-head">Opleiding</div>
+              <div className="tl-head">Education</div>
               <div className="tl-item">
                 <div className="tl-date">2022 – 2026</div>
                 <div className="tl-body">
                   <div className="tl-title">MSc Computing Science</div>
                   <div className="tl-place">Rijksuniversiteit Groningen</div>
-                  <p className="tl-desc">Gespecialiseerd in Software Engineering &amp; Distributed Systems.</p>
+                  <p className="tl-desc">Specialized in Software Engineering &amp; Distributed Systems.</p>
                 </div>
               </div>
               <div className="tl-item">
@@ -472,39 +470,39 @@ export default function En() {
             </R>
 
             <R>
-              <div className="tl-head">Werkervaring</div>
+              <div className="tl-head">Work Experience</div>
               
               <div className="tl-item">
-                <div className="tl-date">2021 - heden</div>
+                <div className="tl-date">2021 - now</div>
                 <div className="tl-body">
-                  <div className="tl-title">ASL Studiebegeleider</div>
+                  <div className="tl-title">Tutor</div>
                   <div className="tl-place">ASL Instituut voor Educatie en Begeleiding, Emmen</div>
-                  <p className="tl-desc">Complexe stof uitleggen aan leerlingen met verschillende achtergronden en niveaus. Het zien van die groei bij leerlingen is wat mij uiteindelijk heeft aangezet tot het volgen van de educatieve master.</p>
+                  <p className="tl-desc">Breaking down complex material for students of varying backgrounds and ability levels. Watching students grow and gain confidence is ultimately what motivated me to take the next step and pursue a career in education.</p>
                 </div>
               </div>
 
               <div className="tl-item">
                 <div className="tl-date">2023 – 2025</div>
                 <div className="tl-body">
-                  <div className="tl-title">Basic-Fit Gastheer</div>
+                  <div className="tl-title">Basic-Fit Host</div>
                   <div className="tl-place">Basic-Fit Emmen</div>
-                  <p className="tl-desc">Als gastheer bij Basic-Fit was ik het eerste aanspreekpunt voor leden en bezoekers. Hierdoor leerde ik snel schakelen, professioneel blijven onder druk en mensen op hun gemak stellen.</p>
+                  <p className="tl-desc">As a host at Basic-Fit I was the first point of contact for members and visitors, a role that taught me to stay professional under pressure, adapt quickly to different situations and make people feel genuinely welcome.</p>
                 </div>
               </div>
 
               <div className="tl-item">
                 <div className="tl-date">2019</div>
                 <div className="tl-body">
-                  <div className="tl-title">Jumbo Leidinggevende</div>
+                  <div className="tl-title">Jumbo Shelf Stacker Supervisor</div>
                   <div className="tl-place">Jumbo Emmen</div>
-                  <p className="tl-desc">Vanuit mijn rol als vakkenvuller groeide ik door naar een leidinggevende positie, waarbij ik de verantwoordelijkheid droeg voor zowel het team als de winkelprocessen. Het leerde mij beslissingen nemen onder druk en verantwoordelijkheid dragen voor het werk van anderen.</p>
+                  <p className="tl-desc">Having started as a shelf stacker, I worked my way up to a supervisory role, taking on responsibility for both the team and daily store operations. This taught me how to lead by example, delegate effectively and make confident decisions under pressure.</p>
                 </div>
               </div>
 
               <div className="tl-item">
                 <div className="tl-date">2018-2019</div>
                 <div className="tl-body">
-                  <div className="tl-title">Vulploegmedewerker Kruidvat</div>
+                  <div className="tl-title">Stock Clerk Kruidvat</div>
                   <div className="tl-place">Kruidvat Emmen</div>
                 </div>
               </div>
@@ -512,9 +510,9 @@ export default function En() {
               <div className="tl-item">
                 <div className="tl-date">2016 - 2018</div>
                 <div className="tl-body">
-                  <div className="tl-title">Vulploegmedewerker Jumbo</div>
+                  <div className="tl-title">Stock Clerk Jumbo</div>
                   <div className="tl-place">Jumbo Emmen</div>
-                  <p className="tl-desc">Mijn eerste stap in de arbeidsmarkt, waarbij ik leerde werken met deadlines, nauwkeurig te zijn en deel uit te maken van een team.</p>
+                  <p className="tl-desc">My first step into the working world, where I developed a strong sense of punctuality, precision and teamwork, foundations that have stayed with me ever since.</p>
                 </div>
               </div>
 
@@ -530,12 +528,12 @@ export default function En() {
       <section className="section" id="contact">
         <div className="section-inner">
           <R><p className="s-label">06 / Contact</p></R>
-          <Words text="Neem contact op" className="s-heading" delay={0.05}/>
+          <Words text="Contact me" className="s-heading" delay={0.05}/>
           <div className="contact-layout">
 
             <R delay={0.1}>
               <p className="contact-intro">
-                Heb je een vraag? Neem dan contact op via een van de onderstaande kanalen.
+                Do you have a question? Then please contact me via one of the channels below.
               </p>
               <div className="contact-rows">
                 <a href="https://github.com/JGTPasveer" target="_blank" rel="noopener noreferrer" className="c-row">
@@ -556,7 +554,8 @@ export default function En() {
                 </div>
                 <div className="quote-divider"/>
                 <div className="quote-author">
-                  <span className="quote-author-name">Albert Einstein</span>
+                  <span className="quote-author-name">Albert Einstein </span>
+                  
                   <span className="quote-author-title">Theoretical Physicist · 1879 – 1955</span>
                 </div>
               </div>
@@ -568,7 +567,7 @@ export default function En() {
 
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <div className="fstatus"><div className="fdot"/><span>Laatste update: 11-05-2026</span></div>
+        <div className="fstatus"><div className="fdot"/><span>Latest update: 11-05-2026</span></div>
         <span>Julian Pasveer</span>
       </footer>
     </>

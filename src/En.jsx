@@ -79,18 +79,17 @@ export default function En() {
       <motion.nav className="nav"
         initial={{ y:-60, opacity:0 }} animate={{ y:0, opacity:1 }}
         transition={{ duration:0.7, ease:[0.22,1,0.36,1] }}>
-        <div className="nav-logo">Julian<span>.</span>dev</div>
+        <div className="nav-logo">Julian Pasveer</div>
         <div className="nav-right">
           <ul className="nav-links">
-            <li><button className="nav-pill" onClick={() => scrollTo("about")}>About</button></li>
+            <li><button className="nav-pill" onClick={() => scrollTo("about")}>About Me</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("skills")}>Skills</button></li>
-            <li><button className="nav-pill" onClick={() => scrollTo("projects")}>Projects</button></li>
-            <li><button className="nav-pill" onClick={() => scrollTo("research")}>Research</button></li>
+            <li><button className="nav-pill" onClick={() => scrollTo("research")}>Research Papers</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("summaries")}>Summaries</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("experience")}>Experience</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("contact")}>Contact</button></li>
           </ul>
-          <button className="lang-btn" onClick={() => navigate("/")}>
+                   <button className="lang-btn" onClick={() => navigate("/")}>
             <span className="lang-flag">🇳🇱</span> NL
           </button>
           <button className={`hamburger${menu ? " open" : ""}`} onClick={() => setMenu(m => !m)}>
@@ -105,10 +104,9 @@ export default function En() {
           <motion.div className="mobile-menu"
             initial={{ opacity:0, y:-12 }} animate={{ opacity:1, y:0 }}
             exit={{ opacity:0, y:-12 }} transition={{ duration:0.25, ease:[0.22,1,0.36,1] }}>
-            <button className="mobile-pill" onClick={() => scrollTo("about")}>About</button>
+            <button className="mobile-pill" onClick={() => scrollTo("about")}>About Me</button>
             <button className="mobile-pill" onClick={() => scrollTo("skills")}>Skills</button>
-            <button className="mobile-pill" onClick={() => scrollTo("projects")}>Projects</button>
-            <button className="mobile-pill" onClick={() => scrollTo("research")}>Research</button>
+            <button className="mobile-pill" onClick={() => scrollTo("research")}>Research Papers</button>
             <button className="mobile-pill" onClick={() => scrollTo("summaries")}>Summaries</button>
             <button className="mobile-pill" onClick={() => scrollTo("experience")}>Experience</button>
             <button className="mobile-pill" onClick={() => scrollTo("contact")}>Contact</button>
@@ -126,18 +124,17 @@ export default function En() {
               initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.1,duration:0.5}}>
               <span className="bdot"/> MSc Computing Science · Rijksuniversiteit Groningen
             </motion.div>
-            <Words text="Julian" className="hero-name" delay={0.15}/>
+            <Words text="Julian Pasveer" className="hero-name" delay={0.15}/>
             <motion.p className="hero-sub"
               initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.35,duration:0.55}}>
-              Software Engineer &amp; <strong>Distributed Systems</strong> Researcher
+              Software Engineer &amp; <strong>Tutor</strong>
             </motion.p>
             <motion.p className="hero-desc"
               initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{delay:0.44,duration:0.55}}>
-              Specialising in <strong>fault-tolerant infrastructure</strong> and <strong>consensus protocols</strong>. Focused on adaptive quorum systems and the gap between theoretical guarantees and production reality.
             </motion.p>
             <motion.div className="hero-cta"
               initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.56,duration:0.5}}>
-              <Mag className="btn-p" onClick={() => scrollTo("about")}>About Me</Mag>
+              <Mag className="btn-p" onClick={() => scrollTo("about")}>About me</Mag>
               <Mag className="btn-g" onClick={() => scrollTo("research")}>Research Papers</Mag>
               <Mag className="btn-g" onClick={() => scrollTo("summaries")}>Summaries</Mag>
             </motion.div>
@@ -157,56 +154,53 @@ export default function En() {
             <motion.div className="scroll-hint"
               initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}
               transition={{delay:1.2,duration:0.6}}>
-              <span>Scroll to explore</span>
+              <span>Scroll to see more</span>
               <div className="scroll-arrow"/>
             </motion.div>
           )}
         </AnimatePresence>
       </section>
 
-      {/* ── ABOUT ── */}
+      {/* ── OVER MIJ ── */}
       <div className="s-divider"/>
       <section className="section" id="about">
         <div className="section-inner">
-          <R><p className="s-label">01 / About</p></R>
-          <Words text="Who I Am" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">01 / About me</p></R>
+          <Words text="Who am I" className="s-heading" delay={0.05}/>
           <R delay={0.1}>
             <div className="about-layout">
               <div className="about-text">
                 <p>
-                  I am Julian Vandermeer, a postgraduate student in Computing Science at the <strong>University of Edinburgh</strong>, specialising in software engineering and distributed systems.
+                  Hi! My name is Julian Pasveer and I am 25 years old. I have both a Bachelor and Master in <strong>Computing Science</strong>.
                 </p>
                 <p>
-                  My research centres on <strong>consensus protocols</strong> — the mechanisms by which distributed systems reach agreement under network partitions and node failures.
+                  In my free time I love going to the gym. Furthermore, I also practice fencing, which I also teach. 
                 </p>
                 <p>
-                  Prior to Edinburgh, I completed a First Class BSc at the <strong>University of Amsterdam</strong> and held engineering roles at <strong>Cloudflare</strong> and <strong>Catawiki</strong>.
+                  For over four and a half years I have been tutoring secondary school students, and I enjoy it so much that I have decided to make education my career. Next year I will begin the <strong>educational master's programme</strong> at the University of Groningen, training to become a qualified first-degree computer science teacher. My BSc and Master's in Computing Science have only deepened my passion for mathematics and computing.
                 </p>
               </div>
-              <div className="about-stats">
-                <R delay={0.00}><div className="stat-b"><div className="stat-n">4+</div><div className="stat-l">Years of Engineering</div></div></R>
-                <R delay={0.08}><div className="stat-b"><div className="stat-n">12</div><div className="stat-l">Projects Shipped</div></div></R>
-                <R delay={0.16}><div className="stat-b"><div className="stat-n">3</div><div className="stat-l">Industry Roles</div></div></R>
-                <R delay={0.24}><div className="stat-b"><div className="stat-n">2</div><div className="stat-l">Pending Publications</div></div></R>
-              </div>
+             <div className="about-img-wrap">
+  <img src={aboutImg} alt="Julian Pasveer" className="about-img"/>
+</div>
             </div>
           </R>
         </div>
       </section>
 
-      {/* ── SKILLS ── */}
+      {/* ── VAARDIGHEDEN ── */}
       <div className="s-divider"/>
       <section className="section" id="skills">
         <div className="section-inner">
-          <R><p className="s-label">02 / Skills</p></R>
-          <Words text="Technical Expertise" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">02 / Vaardigheden</p></R>
+          <Words text="Technische Expertise" className="s-heading" delay={0.05}/>
           <div className="skills-grid">
-            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Languages</div><span className="skill-cat">Core</span></div><div className="skill-tags"><span className="skill-tag">Go</span><span className="skill-tag">Rust</span><span className="skill-tag">TypeScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span></div></div></R>
-            <R delay={0.06}><div className="skill-card"><div className="skill-top"><div className="skill-name">Distributed Systems</div><span className="skill-cat">Specialisation</span></div><div className="skill-tags"><span className="skill-tag">Raft</span><span className="skill-tag">Kafka</span><span className="skill-tag">gRPC</span><span className="skill-tag">etcd</span><span className="skill-tag">ZooKeeper</span></div></div></R>
-            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operations</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span><span className="skill-tag">AWS</span><span className="skill-tag">Terraform</span></div></div></R>
-            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Storage</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">CockroachDB</span><span className="skill-tag">Cassandra</span><span className="skill-tag">ClickHouse</span></div></div></R>
-            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architecture</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">GraphQL</span><span className="skill-tag">WebSockets</span><span className="skill-tag">Microservices</span></div></div></R>
-            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Research</div><span className="skill-cat">Academia</span></div><div className="skill-tags"><span className="skill-tag">Consensus Algorithms</span><span className="skill-tag">CAP Theorem</span><span className="skill-tag">CRDTs</span><span className="skill-tag">TLA+</span></div></div></R>
+            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programmeertalen</div><span className="skill-cat">Kern</span></div><div className="skill-tags"><span className="skill-tag">Java</span><span className="skill-tag">C</span><span className="skill-tag">JavaScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span><span className="skill-tag">C#</span></div></div></R>
+            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operaties</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span></div></div></R>
+            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Opslag</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">MongoDB</span><span className="skill-tag">MySQL</span></div></div></R>
+            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">WebSockets</span></div></div></R>
+            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Frontend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">HTML</span><span className="skill-tag">CSS</span></div></div></R>
+
           </div>
           {/* ── YOUTUBE ── */}
             <R delay={0.4}>
@@ -216,211 +210,225 @@ export default function En() {
                     <div className="yt-icon">▶</div>
                     <div className="yt-title-block">
                     <div className="yt-title">YouTube Content Creator</div>
-                    <div className="yt-sub-label">Since 2019 · Technology & Engineering</div>
+                    <div className="yt-sub-label">Sinds 2024</div>
                     </div>
                 </div>
                 <p className="yt-desc">
-                    Alongside my academic work I run a YouTube channel focused on software engineering, distributed systems, and computer science concepts. Creating content has sharpened my ability to distil complex technical topics into clear, structured explanations — a skill that directly informs how I write research summaries and present findings.
+                    Ik heb sinds 2024 een YouTube kanaal, waarop ik cinematografische focus- en studiemuziek plaats. Ik heb inmiddels meer dan 43.000 subscribers bereikt. Het kanaal combineert cinematic storytelling met productiviteit en richt zich op studenten, programmeurs en professionals die zich beter willen concentreren tijdens het werken of studeren. Door het opbouwen van dit platform heb ik waardevolle ervaring opgedaan.
                 </p>
                 <div className="yt-tags">
-                    <span className="yt-tag">Video Editing</span>
-                    <span className="yt-tag">Premiere Pro</span>
-                    <span className="yt-tag">After Effects</span>
+                    <span className="yt-tag">Videobewerking</span>
+                    <span className="yt-tag">Da Vinci Resolve</span>
+                    <span className="yt-tag">GIMP</span>
                     <span className="yt-tag">Scripting</span>
                     <span className="yt-tag">Thumbnail Design</span>
                     <span className="yt-tag">SEO & Analytics</span>
-                    <span className="yt-tag">Audience Retention</span>
+                    <span className="yt-tag">Kijkersbehoud</span>
                 </div>
                 </div>
                 <div className="yt-stats">
-                <div className="yt-stat"><div className="yt-stat-n">43K</div><div className="yt-stat-l">Subscribers</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">150+</div><div className="yt-stat-l">Videos</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">2+</div><div className="yt-stat-l">Years Active</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">10M+</div><div className="yt-stat-l">Total Views</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">43K</div><div className="yt-stat-l">Abonnees</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">25+</div><div className="yt-stat-l">Video's</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">2+</div><div className="yt-stat-l">Jaar actief</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">10M+</div><div className="yt-stat-l">Totale weergaven</div></div>
                 </div>
             </div>
             </R>
-            {/* ── TEACHING ── */}
+            {/* ── LESGEVEN ── */}
             <R delay={0.5}>
             <div className="teach-card">
                 <div className="teach-left">
                 <div className="teach-header">
                     <div className="teach-icon">✏</div>
                     <div>
-                    <div className="teach-title">Teacher & Tutor</div>
-                    <div className="teach-sub-label">Homework Guidance Institute · 4.5 Years</div>
+                    <div className="teach-title">Studiebegeleider</div>
+                    <div className="teach-sub-label">Huiswerkbegeleiding · 4,5 Jaar</div>
                     </div>
                 </div>
                 <p className="teach-desc">
-                    For four and a half years I worked as a teacher and tutor at a homework guidance institute, supporting secondary school students across a range of subjects including mathematics, physics, and computer science. The role developed my ability to identify individual learning gaps, adapt explanations on the fly, and maintain patience and clarity under pressure — competencies that translate directly into research communication and technical mentorship.
+                    Gedurende vier en een half jaar werkte ik als studiebegeleider bij ASL Huiswerkbegeleiding in Emmen, waarbij ik middelbare scholieren begeleid in vakken als wiskunde, natuurkunde en informatica.
                 </p>
                 <div className="teach-tags">
-                    <span className="teach-tag">Mathematics</span>
-                    <span className="teach-tag">Physics</span>
-                    <span className="teach-tag">Computer Science</span>
-                    <span className="teach-tag">Curriculum Planning</span>
-                    <span className="teach-tag">1-on-1 Coaching</span>
-                    <span className="teach-tag">Group Sessions</span>
-                    <span className="teach-tag">Progress Tracking</span>
+                    <span className="teach-tag">Wiskunde</span>
+                    <span className="teach-tag">Natuurkunde</span>
+                    <span className="teach-tag">Informatica</span>
+                    <span className="teach-tag">Lesplanning</span>
+                    <span className="teach-tag">1-op-1 Begeleiding</span>
+                    <span className="teach-tag">Groepslessen</span>
+                    <span className="teach-tag">Voortgangsmonitoring</span>
                 </div>
                 </div>
                 <div className="teach-stats">
-                <div className="teach-stat"><div className="teach-stat-n">4.5</div><div className="teach-stat-l">Years</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">100+</div><div className="teach-stat-l">Students</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">3</div><div className="teach-stat-l">Subjects</div></div>
-                <div className="teach-stat"><div className="teach-stat-n">VO</div><div className="teach-stat-l">Education Level</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">4,5</div><div className="teach-stat-l">Jaar</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">100+</div><div className="teach-stat-l">Leerlingen</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">3</div><div className="teach-stat-l">Vakken</div></div>
+                <div className="teach-stat"><div className="teach-stat-n">VO</div><div className="teach-stat-l">Onderwijsniveau</div></div>
                 </div>
             </div>
             </R>
         </div>
       </section>
+     
 
-      {/* ── PROJECTS ── */}
-      <div className="s-divider"/>
-      <section className="section" id="projects">
-        <div className="section-inner">
-          <R><p className="s-label">03 / Projects</p></R>
-          <Words text="Selected Work" className="s-heading" delay={0.05}/>
-          <div className="projects-grid">
-
-            <R delay={0.00}>
-              <div className="proj-card feat">
-                <div className="proj-head">
-                  <span className="proj-name">DistributeDB</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">A distributed key-value store built from first principles using the Raft consensus algorithm, supporting linearizable reads, leader election, and log compaction across multi-node clusters.</p>
-                <div className="proj-tags"><span className="proj-tag">Go</span><span className="proj-tag">Raft</span><span className="proj-tag">gRPC</span><span className="proj-tag">etcd</span></div>
-              </div>
-            </R>
-
-            <R delay={0.07}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">StreamMesh</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Event-driven microservices orchestration layer with Kafka-backed message routing, dead-letter queues, and automatic retry semantics.</p>
-                <div className="proj-tags"><span className="proj-tag">Rust</span><span className="proj-tag">Kafka</span><span className="proj-tag">Docker</span><span className="proj-tag">Kubernetes</span></div>
-              </div>
-            </R>
-
-            <R delay={0.14}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">CloudTrace</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Distributed tracing tool for containerised environments with OpenTelemetry integration and a real-time analytical dashboard.</p>
-                <div className="proj-tags"><span className="proj-tag">TypeScript</span><span className="proj-tag">OpenTelemetry</span><span className="proj-tag">React</span><span className="proj-tag">ClickHouse</span></div>
-              </div>
-            </R>
-
-            <R delay={0.21}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">SchedSim</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Discrete-event simulator for evaluating job scheduling algorithms across heterogeneous distributed compute cluster topologies.</p>
-                <div className="proj-tags"><span className="proj-tag">Python</span><span className="proj-tag">SimPy</span><span className="proj-tag">NumPy</span><span className="proj-tag">Matplotlib</span></div>
-              </div>
-            </R>
-
-          </div>
-        </div>
-      </section>
-
-      {/* ── RESEARCH ── */}
+      {/* ── ONDERZOEK ── */}
       <div className="s-divider"/>
       <section className="section" id="research">
         <div className="section-inner">
-          <R><p className="s-label">04 / Research</p></R>
-          <Words text="Academic Papers" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">03 / Onderzoek</p></R>
+          <Words text="Research Papers" className="s-heading" delay={0.05}/>
           <div className="papers-list">
 
             <R delay={0.00}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2025</span><span className="pvenue">EuroSys '25</span><span className="pstatus">Under Review</span></div>
-                  <div className="ptitle">Adaptive Quorum Sizing in Geo-Distributed Raft Clusters Under Partial Failure</div>
-                  <div className="pauthors"><span className="me">Julian V.</span>, A. Harrington, P. Müller</div>
-                  <p className="pabstract">We propose a dynamic quorum reconfiguration mechanism for Raft-based systems that adapts quorum size at runtime based on observed network partition patterns, reducing tail latency by up to 34% without sacrificing linearizability guarantees.</p>
+                  <div className="pmeta"><span className="pyear">2026</span><span className="pvenue">MSc Thesis</span></div>
+                  <div className="ptitle">A Comparative Study of Edge and
+                  Cloud Inference for Mobile Healthcare
+                  Applications: Security, Privacy and
+                  Performance</div>
+                  <div className="pauthors"><span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Link en Abstract worden binnenkort gepubliceerd</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">Preprint ↗</a><a href="#" className="plink">Slides ↗</a></div>
+                {/* <div className="plinks"><a href="#" className="plink">Preprint ↗</a></div> */}
               </div>
             </R>
 
             <R delay={0.09}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2024</span><span className="pvenue">MSc Thesis</span></div>
-                  <div className="ptitle">Fault-Tolerant State Machine Replication: A Comparative Analysis of Raft, Multi-Paxos, and EPaxos</div>
-                  <div className="pauthors"><span className="me">Julian V.</span></div>
-                  <p className="pabstract">A rigorous empirical comparison of three consensus protocols under diverse failure injection scenarios — evaluated across homogeneous and heterogeneous cluster configurations.</p>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue">BSc Thesis</span></div>
+                  <div className="ptitle">Adapting MTO to Radio Astronomical Data: Reliability Measures</div>
+                  <div className="pauthors"><span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Optical telescopes have long been used to detect and study astronomical sources. These
+                  sources are identified by certain methods that are able to filter out the noise from astronomical image data. However, radio telescopes have a great advantage over optical telescopes,
+                  in that they use the HI emission line, which is a spectrum that lies outside of the visible
+                  light spectrum. Consequently, radio telescopes obtain data that is different from optical telescopes. For radio data to be collected, large antennas are needed. The problem with radio
+                  data, however, is adapting the data. This is due to the nature of the data because the noise
+                  in the images is modelled differently than with data from optical telescopes.
+                  In this project, we aimed to find a solution to this problem. We began by using Max
+                  Tree Objects (MTO). We exploited MTO’s characteristics and created a min and a max tree,
+                  which contain data for the negative signals and positive signals within the data, respectively.
+                  These trees contain nodes and specific node attribute data was fed to a Kernel Density Estimation (KDE) function. A filtering formula was created in order to filter out the noise. This
+                  was done by using a graphical user interface in which we could adjust the threshold as well
+                  as by creating an accuracy graph and a precision-recall graph.
+                  Through experimentation, we determined that a threshold value of 4400 gave the best results.
+                  This threshold value resulted in the most effective noise reduction whilst still suppressing the
+                  number of outliers.</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">PDF ↗</a><a href="#" className="plink">Code ↗</a></div>
+                <div className="plinks"><a href="https://fse.studenttheses.ub.rug.nl/31346/" target="_blank" className="plink">PDF ↗</a></div>
               </div>
             </R>
 
             <R delay={0.18}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue">ICDE '23</span></div>
-                  <div className="ptitle">Towards Predictive Load Balancing in Heterogeneous Cloud Storage Systems</div>
-                  <div className="pauthors">A. Harrington, <span className="me">Julian V.</span>, S. de Vries</div>
-                  <p className="pabstract">A machine-learning-assisted load balancer leveraging historical access pattern embeddings to anticipate hotspot formation, outperforming static baselines by 21% on throughput.</p>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Deep Learning for Leakage Detection in Water Networks: A Comparative Study</div>
+                  <div className="pauthors">C. van Riemsdijk and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Water leaks in Water Distribution Networks (WDNs) are of paramount importance since water is a crucial resource for all
+                  life on earth. As we are growing as a population as a whole, it is necessary to have efficient management of water resources. This
+                  comparative study explores the state of the art regarding methods and algorithms used in order to detect water leaks in WDNs. All
+                  methods discussed in this comparative study use deep learning, where we focus on approach and methodology. We analyze, discuss
+                  and if needed discuss the methods for leakage detection. These methods consist of acoustic, pressure, and water flow sensor data.
+                  This data is fed to deep learning algorithms. The algorithms analyzed are deep neural networks, convolutional neural networks, and
+                  recurrent neural networks. We come to the conclusion that many of the aforementioned models have the capabilities to solve the
+                  leakage detection task, but they are highly dependent on the form that the input data takes.</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">PDF ↗</a><a href="#" className="plink">Poster ↗</a></div>
+                <div className="plinks"><a href="https://pure.rug.nl/ws/portalfiles/portal/630834016/proceedings.pdf" target="_blank" className="plink">PDF ↗</a></div>
               </div>
+            </R>
+
+              <R delay={0.27}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Exploring the cosine similarity for automated relating of architectural issues and emails in mailing lists</div>
+                  <div className="pauthors">B. Pijnacker, J. van der Zwaag and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">In software development, it is important to document architectural design decisions.
+                    However, design decisions are often discussed in multiple places, such as in email lists
+                    or in issue tracking systems. The problem that arises is the fact that some decisions
+                    are hard to get a grasp on since a part of it could be explained in an email and part of
+                    it in an issue. In this research, we have investigated the relationships between design
+                    decisions documented in Jira issues and mailing lists for multiple Apache projects. Our
+                    research applied the cosine similarity measure in order to find relations between the
+                    issues and emails, followed by a qualitative and quantitative analysis that explored the
+                    relationships.
+                    In general, we found that relationships are mostly one-way. A discussion most often
+                    starts with an issue and is followed up upon in an email. The most common relations
+                    were emails that were asking for discussions regarding an issue or emails that were
+                    referencing an issue. Moreover, emails were, in some cases, the cause of the creation of
+                    an issue, which was the only issue-to-email relation we encountered.</p>
+                </div>
+                <div className="plinks"><a href="/research_papers/cosine.pdf" target="_blank" className="plink">PDF ↗</a></div>
+              </div>
+            </R>
+
+              <R delay={0.36}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2022</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Tools for Measuring and Monitoring the Energy Efficiency of Software Systems: A Rapid Review</div>
+                  <div className="pauthors">B. Pijnacker, J. van der Zwaag and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">The recent growth of the information and communication technology (ICT) industry has had a significant impact on the environment. This trend is concerning for both
+                  the sustainability of the ICT industry and the global environment. One way to address
+                  this issue is to focus on improving the power efficiency of software. For this purpose,
+                  a software developer requires tools to investigate their software’s power usage.
+                  This paper reviews the literature on available tools for measuring the power efficiency of software and discusses the limitations of these tools. We find that tools can be
+                  categorized by target, granularity, and hardware requirements. One limitation of these
+                  tools is the need for specialized hardware for some measurements. Another limitation
+                  is the accuracy of tools that estimate power usage without specialized hardware.
+                  </p>
+                </div>
+                <div className="plinks"><a href="/research_papers/Rapid_Review__Which_tools_can_I_use_to_measure_and_monitor_the_energy_efficiency_of_my_software_system_.pdf" target="_blank" className="plink">PDF ↗</a></div>
+              </div>
+            </R>
+
+              <R delay={0.45}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2020</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Solutions to large scale DNA and RNA processing</div>
+                  <div className="pauthors">Y. Molema, <span className="me">J. Pasveer</span>, D. Scheepstra, M. Kruijer, W. Haverkort, J. Klooster and R. Wuijster</div>
+                  <p className="pabstract">Big data sets of DNA and RNA can be easily
+                      acquired. However, processing these data-sets, which are in the
+                      petabyte scale, comes with some complications. This report will
+                      discuss how already existing computational solutions can help
+                      with processing large-scale data sets. The best solution found in
+                      this report is cloud computing: it improves the speed, flexibility
+                      and costs of processing data. However, it can compromise privacy.
+                      Map Reduce and Heterogeneous computing were the other
+                      solutions taken into consideration. Life sciences are in need of a
+                      solution, because if a solution is found, further research into the
+                      human body can be carried out. Furthermore, the size of these
+                      data sets will keep growing. This means when no solution can be
+                      found, the problem will become harder to solve.
+                  </p>
+                </div>
+            <div className="plinks">
+              <a href="/research_papers/Research_Paper_SC.pdf" target="_blank" rel="noopener noreferrer" className="plink">PDF ↗</a>
+
+            </div>              </div>
             </R>
 
           </div>
         </div>
       </section>
 
-      {/* ── SUMMARIES ── */}
+      {/* ── SAMENVATTINGEN ── */}
       <div className="s-divider"/>
       <section className="section" id="summaries">
         <div className="section-inner">
-          <R><p className="s-label">05 / Summaries</p></R>
-          <Words text="Research Summaries" className="s-heading" delay={0.05}/>
-          <R delay={0.1}><p className="sum-intro">Accessible accounts of my research outputs for a technically informed but non-specialist readership.</p></R>
+          <R><p className="s-label">04 / Samenvattingen</p></R>
+          <Words text="Samenvattingen" className="s-heading" delay={0.05}/>
+          <R delay={0.1}><p className="sum-intro">Tijdens mijn studies heb ik meerdere samenvattingen geschreven. Deze zal ik binnenkort publiceren</p></R>
           <div className="sum-grid">
 
             <R delay={0.00}>
               <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Adaptive Quorum Sizing in Geo-Distributed Raft Clusters</div><span className="sum-tag">Consensus</span></div>
-                <div className="sum-origin">EuroSys '25</div>
-                <p className="sum-body">Rather than fixing quorum size at initialisation, nodes vote to reconfigure dynamically based on real-time partition telemetry — preserving safety while reducing tail latency.</p>
-                <a href="#" className="sum-read">Read in full →</a>
-              </div>
-            </R>
-
-            <R delay={0.08}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Comparing Raft, Multi-Paxos and EPaxos Under Failure Injection</div><span className="sum-tag">Fault Tolerance</span></div>
-                <div className="sum-origin">MSc Thesis — 2024</div>
-                <p className="sum-body">EPaxos shows superior throughput in wide-area networks, but Raft's implementation simplicity yields better correctness during recovery.</p>
-                <a href="#" className="sum-read">Read in full →</a>
-              </div>
-            </R>
-
-            <R delay={0.16}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Predictive Load Balancing via Access Pattern Embeddings</div><span className="sum-tag">Cloud Storage</span></div>
-                <div className="sum-origin">ICDE '23 Workshop</div>
-                <p className="sum-body">Lightweight ML embeddings anticipate access skew 10–30 seconds in advance, giving the scheduler time for proactive rebalancing.</p>
-                <a href="#" className="sum-read">Read in full →</a>
-              </div>
-            </R>
-
-            <R delay={0.24}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Why Raft Leader Elections Are Harder Than They Appear</div><span className="sum-tag">Engineering</span></div>
-                <div className="sum-origin">Technical Essay — 2025</div>
-                <p className="sum-body">Randomised election timeouts interact poorly with real-world jitter, asymmetric delay, and GC pauses — concerns critical in production.</p>
-                <a href="#" className="sum-read">Read in full →</a>
+                <div className="sum-head"><div className="sum-title">Voorbeeld</div><span className="sum-tag"></span></div>
+                <div className="sum-origin">Vak</div>
+                <p className="sum-body">Samenvatting</p>
+                <a href="#" className="sum-read">Lees volledig →</a>
               </div>
             </R>
 
@@ -428,93 +436,140 @@ export default function En() {
         </div>
       </section>
 
-      {/* ── EXPERIENCE ── */}
+      {/* ── ERVARING ── */}
       <div className="s-divider"/>
       <section className="section" id="experience">
         <div className="section-inner">
-          <R><p className="s-label">06 / Background</p></R>
-          <Words text="Education & Experience" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">05 / Achtergrond</p></R>
+          <Words text="Opleiding & Ervaring" className="s-heading" delay={0.05}/>
           <div className="tl-cols">
 
             <R>
-              <div className="tl-head">Education</div>
+              <div className="tl-head">Opleiding</div>
               <div className="tl-item">
-                <div className="tl-date">2023 – Present</div>
+                <div className="tl-date">2022 – 2026</div>
                 <div className="tl-body">
                   <div className="tl-title">MSc Computing Science</div>
-                  <div className="tl-place">University of Edinburgh</div>
-                  <p className="tl-desc">Specialising in Software Engineering &amp; Distributed Systems. Research on consensus protocols and fault-tolerant system design. Expected 2025.</p>
+                  <div className="tl-place">Rijksuniversiteit Groningen</div>
+                  <p className="tl-desc">Gespecialiseerd in Software Engineering &amp; Distributed Systems.</p>
                 </div>
               </div>
               <div className="tl-item">
-                <div className="tl-date">2019 – 2023</div>
+                <div className="tl-date">2018 – 2023</div>
                 <div className="tl-body">
-                  <div className="tl-title">BSc Computer Science</div>
-                  <div className="tl-place">University of Amsterdam</div>
-                  <p className="tl-desc">First Class Honours. Dissertation on load balancing in heterogeneous cloud environments. Dean's List 2022 &amp; 2023.</p>
+                  <div className="tl-title">BSc Computing Science</div>
+                  <div className="tl-place">Rijksuniversiteit Groningen</div>
+                  {/* <p className="tl-desc">GPA 7</p> */}
+                </div>
+              </div>
+               <div className="tl-item">
+                <div className="tl-date">2012 – 2018</div>
+                <div className="tl-body">
+                  <div className="tl-title">Atheneum, Natuur & Techniek</div>
+                  <div className="tl-place">Esdal College Oosterstraat</div>
                 </div>
               </div>
             </R>
 
             <R>
-              <div className="tl-head">Professional Experience</div>
+              <div className="tl-head">Werkervaring</div>
+              
               <div className="tl-item">
-                <div className="tl-date">Summer 2024</div>
+                <div className="tl-date">2021 - heden</div>
                 <div className="tl-body">
-                  <div className="tl-title">Software Engineering Intern</div>
-                  <div className="tl-place">Cloudflare · London</div>
-                  <p className="tl-desc">Contributed to the Workers KV distributed storage layer, improving cache invalidation latency by 18%.</p>
+                  <div className="tl-title">ASL Studiebegeleider</div>
+                  <div className="tl-place">ASL Instituut voor Educatie en Begeleiding, Emmen</div>
+                  <p className="tl-desc">Complexe stof uitleggen aan leerlingen met verschillende achtergronden en niveaus. Het zien van die groei bij leerlingen is wat mij uiteindelijk heeft aangezet tot het volgen van de educatieve master.</p>
                 </div>
               </div>
+
               <div className="tl-item">
-                <div className="tl-date">2022 – 2023</div>
+                <div className="tl-date">2023 – 2025</div>
                 <div className="tl-body">
-                  <div className="tl-title">Backend Engineer (Part-time)</div>
-                  <div className="tl-place">Catawiki · Amsterdam</div>
-                  <p className="tl-desc">Designed event-driven auction pipelines handling 40k+ transactions/day at sub-100ms p99 using Kafka and Go.</p>
+                  <div className="tl-title">Basic-Fit Gastheer</div>
+                  <div className="tl-place">Basic-Fit Emmen</div>
+                  <p className="tl-desc">Als gastheer bij Basic-Fit was ik het eerste aanspreekpunt voor leden en bezoekers. Hierdoor leerde ik snel schakelen, professioneel blijven onder druk en mensen op hun gemak stellen.</p>
                 </div>
               </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2019</div>
+                <div className="tl-body">
+                  <div className="tl-title">Jumbo Leidinggevende</div>
+                  <div className="tl-place">Jumbo Emmen</div>
+                  <p className="tl-desc">Vanuit mijn rol als vakkenvuller groeide ik door naar een leidinggevende positie, waarbij ik de verantwoordelijkheid droeg voor zowel het team als de winkelprocessen. Het leerde mij beslissingen nemen onder druk en verantwoordelijkheid dragen voor het werk van anderen.</p>
+                </div>
+              </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2018-2019</div>
+                <div className="tl-body">
+                  <div className="tl-title">Vulploegmedewerker Kruidvat</div>
+                  <div className="tl-place">Kruidvat Emmen</div>
+                </div>
+              </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2016 - 2018</div>
+                <div className="tl-body">
+                  <div className="tl-title">Vulploegmedewerker Jumbo</div>
+                  <div className="tl-place">Jumbo Emmen</div>
+                  <p className="tl-desc">Mijn eerste stap in de arbeidsmarkt, waarbij ik leerde werken met deadlines, nauwkeurig te zijn en deel uit te maken van een team.</p>
+                </div>
+              </div>
+
+
             </R>
 
           </div>
         </div>
       </section>
 
-      {/* ── CONTACT ── */}
+     {/* ── CONTACT ── */}
       <div className="s-divider"/>
       <section className="section" id="contact">
         <div className="section-inner">
-          <R><p className="s-label">07 / Contact</p></R>
-          <Words text="Get in Touch" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">06 / Contact</p></R>
+          <Words text="Neem contact op" className="s-heading" delay={0.05}/>
           <div className="contact-layout">
+
             <R delay={0.1}>
               <p className="contact-intro">
-                I welcome enquiries relating to <strong>research collaboration</strong>, <strong>internship opportunities</strong>, or general correspondence.
+                Heb je een vraag? Neem dan contact op via een van de onderstaande kanalen.
               </p>
               <div className="contact-rows">
-                <a href="mailto:julian@example.com" className="c-row"><span className="c-lbl">Email</span><span className="c-val">julian@example.com</span></a>
-                <a href="https://github.com/julian" className="c-row"><span className="c-lbl">GitHub</span><span className="c-val">github.com/julian</span></a>
-                <a href="https://linkedin.com/in/julian" className="c-row"><span className="c-lbl">LinkedIn</span><span className="c-val">linkedin.com/in/julian</span></a>
-                <a href="#" className="c-row"><span className="c-lbl">Scholar</span><span className="c-val">Google Scholar</span></a>
+                <a href="https://github.com/JGTPasveer" target="_blank" rel="noopener noreferrer" className="c-row">
+                  <span className="c-lbl">GitHub</span>
+                  <span className="c-val">github.com/JGTPasveer</span>
+                </a>
+                <a href="https://www.linkedin.com/in/julian-pasveer-466ba125a/" target="_blank" rel="noopener noreferrer" className="c-row">
+                  <span className="c-lbl">LinkedIn</span>
+                  <span className="c-val">linkedin.com/in/julian</span>
+                </a>
               </div>
             </R>
-            <R delay={0.18}>
-              <div>
-                <div className="form-g"><label className="form-lbl">Full Name</label><input className="form-in" type="text" placeholder="Your name"/></div>
-                <div className="form-g"><label className="form-lbl">Email Address</label><input className="form-in" type="email" placeholder="your@email.com"/></div>
-                <div className="form-g"><label className="form-lbl">Message</label><textarea className="form-ta" placeholder="Your message…"/></div>
-                <Mag className="btn-p">Send Message</Mag>
+
+            <R delay={0.25}>
+              <div className="quote-card">
+                <div className="quote-text">
+                  "If you can't explain it <strong>simply</strong>, you don't understand it well enough."
+                </div>
+                <div className="quote-divider"/>
+                <div className="quote-author">
+                  <span className="quote-author-name">Albert Einstein</span>
+                  <span className="quote-author-title">Theoretical Physicist · 1879 – 1955</span>
+                </div>
               </div>
             </R>
+
           </div>
         </div>
       </section>
 
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <div className="fstatus"><div className="fdot"/><span>Open to opportunities</span></div>
-        <span>Julian Vandermeer</span>
-        <span>© {new Date().getFullYear()}</span>
+        <div className="fstatus"><div className="fdot"/><span>Laatste update: 11-05-2026</span></div>
+        <span>Julian Pasveer</span>
       </footer>
     </>
   );

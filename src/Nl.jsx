@@ -2,6 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useInView, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import heroImg from "./assets/prof.jpg";
+import aboutImg from "./assets/about.PNG";
+
 import STYLES from "./styles";
 
 
@@ -76,13 +78,12 @@ export default function Nl() {
       <motion.nav className="nav"
         initial={{ y:-60, opacity:0 }} animate={{ y:0, opacity:1 }}
         transition={{ duration:0.7, ease:[0.22,1,0.36,1] }}>
-        <div className="nav-logo">Julian<span>.</span>dev</div>
+        <div className="nav-logo">Julian Pasveer</div>
         <div className="nav-right">
           <ul className="nav-links">
             <li><button className="nav-pill" onClick={() => scrollTo("about")}>Over mij</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("skills")}>Vaardigheden</button></li>
-            <li><button className="nav-pill" onClick={() => scrollTo("projects")}>Projecten</button></li>
-            <li><button className="nav-pill" onClick={() => scrollTo("research")}>Onderzoek</button></li>
+            <li><button className="nav-pill" onClick={() => scrollTo("research")}>Research Papers</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("summaries")}>Samenvattingen</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("experience")}>Ervaring</button></li>
             <li><button className="nav-pill" onClick={() => scrollTo("contact")}>Contact</button></li>
@@ -104,8 +105,7 @@ export default function Nl() {
             exit={{ opacity:0, y:-12 }} transition={{ duration:0.25, ease:[0.22,1,0.36,1] }}>
             <button className="mobile-pill" onClick={() => scrollTo("about")}>Over mij</button>
             <button className="mobile-pill" onClick={() => scrollTo("skills")}>Vaardigheden</button>
-            <button className="mobile-pill" onClick={() => scrollTo("projects")}>Projecten</button>
-            <button className="mobile-pill" onClick={() => scrollTo("research")}>Onderzoek</button>
+            <button className="mobile-pill" onClick={() => scrollTo("research")}>Research Papers</button>
             <button className="mobile-pill" onClick={() => scrollTo("summaries")}>Samenvattingen</button>
             <button className="mobile-pill" onClick={() => scrollTo("experience")}>Ervaring</button>
             <button className="mobile-pill" onClick={() => scrollTo("contact")}>Contact</button>
@@ -123,19 +123,19 @@ export default function Nl() {
               initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.1,duration:0.5}}>
               <span className="bdot"/> MSc Computing Science · Rijksuniversiteit Groningen
             </motion.div>
-            <Words text="Julian" className="hero-name" delay={0.15}/>
+            <Words text="Julian Pasveer" className="hero-name" delay={0.15}/>
             <motion.p className="hero-sub"
               initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.35,duration:0.55}}>
-              Software Engineer &amp; <strong>Gedistribueerde Systemen</strong> Onderzoeker
+              Software Engineer &amp; <strong>Tutor</strong>
             </motion.p>
             <motion.p className="hero-desc"
               initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{delay:0.44,duration:0.55}}>
-              Gespecialiseerd in <strong>fouttolerante infrastructuur</strong> en <strong>consensusprotocollen</strong>. Gefocust op adaptieve quorumsystemen en het verschil tussen theoretische garanties en de praktijk.
+              {/* Gespecialiseerd in <strong>fouttolerante infrastructuur</strong> en <strong>consensusprotocollen</strong>. Gefocust op adaptieve quorumsystemen en het verschil tussen theoretische garanties en de praktijk. */}
             </motion.p>
             <motion.div className="hero-cta"
               initial={{opacity:0,y:10}} animate={{opacity:1,y:0}} transition={{delay:0.56,duration:0.5}}>
               <Mag className="btn-p" onClick={() => scrollTo("about")}>Over mij</Mag>
-              <Mag className="btn-g" onClick={() => scrollTo("research")}>Onderzoeksartikelen</Mag>
+              <Mag className="btn-g" onClick={() => scrollTo("research")}>Research Papers</Mag>
               <Mag className="btn-g" onClick={() => scrollTo("summaries")}>Samenvattingen</Mag>
             </motion.div>
           </div>
@@ -171,21 +171,19 @@ export default function Nl() {
             <div className="about-layout">
               <div className="about-text">
                 <p>
-                  Ik ben Julian Vandermeer, een postdoctorale student Informatica aan de <strong>Universiteit van Edinburgh</strong>, gespecialiseerd in software engineering en gedistribueerde systemen.
+                  Hi! Mijn naam is Julian Pasveer en ik ben 25 jaar oud. Ik heb zowel een Bachelor als Master in <strong>Computing Science</strong>.
                 </p>
                 <p>
-                  Mijn onderzoek richt zich op <strong>consensusprotocollen</strong> — de mechanismen waarmee gedistribueerde systemen overeenstemming bereiken bij netwerkpartities en knooppuntfouten.
+                  In mijn vrije tijd ben ik vaak in de sportschool te vinden. Daarnaast doe ik aan schermen, een sport waar ik ook les in geef. 
                 </p>
                 <p>
-                  Voor Edinburgh behaalde ik een BSc met onderscheiding aan de <strong>Universiteit van Amsterdam</strong> en werkte ik bij <strong>Cloudflare</strong> en <strong>Catawiki</strong>.
+                  Al ruim 4,5 jaar geef ik bijles aan middelbare scholieren. Dit vind ik dusdanig leuk dat ik heb besloten het onderwijs in te gaan. Volgend jaar start ik met de <strong>educatieve master</strong> aan de Rijksuniversiteit Groningen, waarmee ik de stap naar het onderwijs ga maken. Ik word dan opgeleid tot eerstegraads informatica docent. 
+                  Mijn BSc en Master in Computing Science hebben mijn passie voor wiskunde en informatica alleen maar versterkt.
                 </p>
               </div>
-              <div className="about-stats">
-                <R delay={0.00}><div className="stat-b"><div className="stat-n">4+</div><div className="stat-l">Jaar ervaring</div></div></R>
-                <R delay={0.08}><div className="stat-b"><div className="stat-n">12</div><div className="stat-l">Projecten opgeleverd</div></div></R>
-                <R delay={0.16}><div className="stat-b"><div className="stat-n">3</div><div className="stat-l">Industrierollen</div></div></R>
-                <R delay={0.24}><div className="stat-b"><div className="stat-n">2</div><div className="stat-l">Publicaties in voorbereiding</div></div></R>
-              </div>
+             <div className="about-img-wrap">
+  <img src={aboutImg} alt="Julian Pasveer" className="about-img"/>
+</div>
             </div>
           </R>
         </div>
@@ -198,12 +196,12 @@ export default function Nl() {
           <R><p className="s-label">02 / Vaardigheden</p></R>
           <Words text="Technische Expertise" className="s-heading" delay={0.05}/>
           <div className="skills-grid">
-            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programmeertalen</div><span className="skill-cat">Kern</span></div><div className="skill-tags"><span className="skill-tag">Go</span><span className="skill-tag">Rust</span><span className="skill-tag">TypeScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span></div></div></R>
+            <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programmeertalen</div><span className="skill-cat">Kern</span></div><div className="skill-tags"><span className="skill-tag">Java</span><span className="skill-tag">C</span><span className="skill-tag">JavaScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span><span className="skill-tag">C#</span></div></div></R>
             <R delay={0.06}><div className="skill-card"><div className="skill-top"><div className="skill-name">Gedistribueerde Systemen</div><span className="skill-cat">Specialisatie</span></div><div className="skill-tags"><span className="skill-tag">Raft</span><span className="skill-tag">Kafka</span><span className="skill-tag">gRPC</span><span className="skill-tag">etcd</span><span className="skill-tag">ZooKeeper</span></div></div></R>
             <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operaties</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span><span className="skill-tag">AWS</span><span className="skill-tag">Terraform</span></div></div></R>
-            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Opslag</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">CockroachDB</span><span className="skill-tag">Cassandra</span><span className="skill-tag">ClickHouse</span></div></div></R>
-            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">GraphQL</span><span className="skill-tag">WebSockets</span><span className="skill-tag">Microservices</span></div></div></R>
-            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Onderzoek</div><span className="skill-cat">Academisch</span></div><div className="skill-tags"><span className="skill-tag">Consensus Algorithms</span><span className="skill-tag">CAP Theorem</span><span className="skill-tag">CRDTs</span><span className="skill-tag">TLA+</span></div></div></R>
+            <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Opslag</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">MongoDB</span><span className="skill-tag">MySQL</span></div></div></R>
+            <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">WebSockets</span></div></div></R>
+            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Onderzoek</div><span className="skill-cat">Academisch</span></div><div className="skill-tags"><span className="skill-tag">Consensus Algorithms</span><span className="skill-tag">CAP Theorem</span></div></div></R>
           </div>
           {/* ── YOUTUBE ── */}
             <R delay={0.4}>
@@ -212,12 +210,12 @@ export default function Nl() {
                 <div className="yt-header">
                     <div className="yt-icon">▶</div>
                     <div className="yt-title-block">
-                    <div className="yt-title">YouTube Contentmaker</div>
-                    <div className="yt-sub-label">Sinds 2019 · Technologie & Engineering</div>
+                    <div className="yt-title">YouTube Content Creator</div>
+                    <div className="yt-sub-label">Sinds 2024</div>
                     </div>
                 </div>
                 <p className="yt-desc">
-                    Naast mijn academisch werk beheer ik een YouTube-kanaal gericht op software engineering, gedistribueerde systemen en informaticaconcepten. Het maken van content heeft mijn vermogen aangescherpt om complexe technische onderwerpen te destilleren naar heldere, gestructureerde uitleg — een vaardigheid die direct doorwerkt in hoe ik onderzoekssamenvattingen schrijf en bevindingen presenteer.
+                    Ik heb sinds 2024 een YouTube kanaal, waarop ik cinematografische focus- en studiemuziek plaats. Ik heb inmiddels meer dan 43.000 subscribers bereikt. Het kanaal combineert cinematic storytelling met productiviteit en richt zich op studenten, programmeurs en professionals die zich beter willen concentreren tijdens het werken of studeren. Door het opbouwen van dit platform heb ik waardevolle ervaring opgedaan.
                 </p>
                 <div className="yt-tags">
                     <span className="yt-tag">Videobewerking</span>
@@ -231,7 +229,7 @@ export default function Nl() {
                 </div>
                 <div className="yt-stats">
                 <div className="yt-stat"><div className="yt-stat-n">43K</div><div className="yt-stat-l">Abonnees</div></div>
-                <div className="yt-stat"><div className="yt-stat-n">150+</div><div className="yt-stat-l">Video's</div></div>
+                <div className="yt-stat"><div className="yt-stat-n">25+</div><div className="yt-stat-l">Video's</div></div>
                 <div className="yt-stat"><div className="yt-stat-n">2+</div><div className="yt-stat-l">Jaar actief</div></div>
                 <div className="yt-stat"><div className="yt-stat-n">10M+</div><div className="yt-stat-l">Totale weergaven</div></div>
                 </div>
@@ -271,105 +269,146 @@ export default function Nl() {
             </R>
         </div>
       </section>
-
-      {/* ── PROJECTEN ── */}
-      <div className="s-divider"/>
-      <section className="section" id="projects">
-        <div className="section-inner">
-          <R><p className="s-label">03 / Projecten</p></R>
-          <Words text="Geselecteerd Werk" className="s-heading" delay={0.05}/>
-          <div className="projects-grid">
-
-            <R delay={0.00}>
-              <div className="proj-card feat">
-                <div className="proj-head">
-                  <span className="proj-name">DistributeDB</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Een gedistribueerde sleutel-waardeopslag gebouwd vanuit basisprincipes met het Raft-consensusalgoritme, met ondersteuning voor lineariseerbare leesbewerkingen, leiderverkiezing en logcompactie.</p>
-                <div className="proj-tags"><span className="proj-tag">Go</span><span className="proj-tag">Raft</span><span className="proj-tag">gRPC</span><span className="proj-tag">etcd</span></div>
-              </div>
-            </R>
-
-            <R delay={0.07}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">StreamMesh</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Gebeurtenisgestuurde microservices-orchestratielaag met Kafka-berichtroutering, dead-letter queues en automatische hertrypogingen.</p>
-                <div className="proj-tags"><span className="proj-tag">Rust</span><span className="proj-tag">Kafka</span><span className="proj-tag">Docker</span><span className="proj-tag">Kubernetes</span></div>
-              </div>
-            </R>
-
-            <R delay={0.14}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">CloudTrace</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Gedistribueerd traceringstool voor gecontaineriseerde omgevingen met OpenTelemetry-integratie en een realtime analytisch dashboard.</p>
-                <div className="proj-tags"><span className="proj-tag">TypeScript</span><span className="proj-tag">OpenTelemetry</span><span className="proj-tag">React</span><span className="proj-tag">ClickHouse</span></div>
-              </div>
-            </R>
-
-            <R delay={0.21}>
-              <div className="proj-card">
-                <div className="proj-head">
-                  <span className="proj-name">SchedSim</span>
-                  <div className="proj-links"><a href="#" className="proj-link">GitHub ↗</a><a href="#" className="proj-link">Demo ↗</a></div>
-                </div>
-                <p className="proj-desc">Discrete-gebeurtenissimulator voor het evalueren van taakplanningsalgoritmen in heterogene gedistribueerde rekenclusterconfiguraties.</p>
-                <div className="proj-tags"><span className="proj-tag">Python</span><span className="proj-tag">SimPy</span><span className="proj-tag">NumPy</span><span className="proj-tag">Matplotlib</span></div>
-              </div>
-            </R>
-
-          </div>
-        </div>
-      </section>
+     
 
       {/* ── ONDERZOEK ── */}
       <div className="s-divider"/>
       <section className="section" id="research">
         <div className="section-inner">
-          <R><p className="s-label">04 / Onderzoek</p></R>
-          <Words text="Academische Artikelen" className="s-heading" delay={0.05}/>
+          <R><p className="s-label">03 / Onderzoek</p></R>
+          <Words text="Research Papers" className="s-heading" delay={0.05}/>
           <div className="papers-list">
 
             <R delay={0.00}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2025</span><span className="pvenue">EuroSys '25</span><span className="pstatus">Onder beoordeling</span></div>
-                  <div className="ptitle">Adaptieve quorumgrootte in geo-gedistribueerde Raft-clusters bij partiële uitval</div>
-                  <div className="pauthors"><span className="me">Julian V.</span>, A. Harrington, P. Müller</div>
-                  <p className="pabstract">We stellen een dynamisch quorumherconfiguratiemechanisme voor Raft-systemen voor dat de quorumgrootte tijdens gebruik aanpast op basis van geobserveerde netwerkpartitiepatronen, waardoor de staartlatentie met maximaal 34% wordt verminderd.</p>
+                  <div className="pmeta"><span className="pyear">2026</span><span className="pvenue">MSc Thesis</span></div>
+                  <div className="ptitle">A Comparative Study of Edge and
+                  Cloud Inference for Mobile Healthcare
+                  Applications: Security, Privacy and
+                  Performance</div>
+                  <div className="pauthors"><span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Link en Abstract worden binnenkort gepubliceerd</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">Preprint ↗</a><a href="#" className="plink">Slides ↗</a></div>
+                {/* <div className="plinks"><a href="#" className="plink">Preprint ↗</a></div> */}
               </div>
             </R>
 
             <R delay={0.09}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2024</span><span className="pvenue">MSc Thesis</span></div>
-                  <div className="ptitle">Fouttolerante toestandsmachinereplicatie: Een vergelijkende analyse van Raft, Multi-Paxos en EPaxos</div>
-                  <div className="pauthors"><span className="me">Julian V.</span></div>
-                  <p className="pabstract">Een grondige empirische vergelijking van drie consensusprotocollen onder diverse foutinjectiescenario's, geëvalueerd in homogene en heterogene clusterconfiguraties.</p>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue">BSc Thesis</span></div>
+                  <div className="ptitle">Adapting MTO to Radio Astronomical Data: Reliability Measures</div>
+                  <div className="pauthors"><span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Optical telescopes have long been used to detect and study astronomical sources. These
+                  sources are identified by certain methods that are able to filter out the noise from astronomical image data. However, radio telescopes have a great advantage over optical telescopes,
+                  in that they use the HI emission line, which is a spectrum that lies outside of the visible
+                  light spectrum. Consequently, radio telescopes obtain data that is different from optical telescopes. For radio data to be collected, large antennas are needed. The problem with radio
+                  data, however, is adapting the data. This is due to the nature of the data because the noise
+                  in the images is modelled differently than with data from optical telescopes.
+                  In this project, we aimed to find a solution to this problem. We began by using Max
+                  Tree Objects (MTO). We exploited MTO’s characteristics and created a min and a max tree,
+                  which contain data for the negative signals and positive signals within the data, respectively.
+                  These trees contain nodes and specific node attribute data was fed to a Kernel Density Estimation (KDE) function. A filtering formula was created in order to filter out the noise. This
+                  was done by using a graphical user interface in which we could adjust the threshold as well
+                  as by creating an accuracy graph and a precision-recall graph.
+                  Through experimentation, we determined that a threshold value of 4400 gave the best results.
+                  This threshold value resulted in the most effective noise reduction whilst still suppressing the
+                  number of outliers.</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">PDF ↗</a><a href="#" className="plink">Code ↗</a></div>
+                <div className="plinks"><a href="https://fse.studenttheses.ub.rug.nl/31346/" target="_blank" className="plink">PDF ↗</a></div>
               </div>
             </R>
 
             <R delay={0.18}>
               <div className="paper-card">
                 <div>
-                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue">ICDE '23</span></div>
-                  <div className="ptitle">Naar voorspellende belastingsverdeling in heterogene cloudopslagsystemen</div>
-                  <div className="pauthors">A. Harrington, <span className="me">Julian V.</span>, S. de Vries</div>
-                  <p className="pabstract">Een machine-learning-ondersteunde load balancer die historische toegangspatroonembeddings gebruikt om hotspots te anticiperen en statische basislijnen met 21% overtreft in doorvoer.</p>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Deep Learning for Leakage Detection in Water Networks: A Comparative Study</div>
+                  <div className="pauthors">C. van Riemsdijk and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">Water leaks in Water Distribution Networks (WDNs) are of paramount importance since water is a crucial resource for all
+                  life on earth. As we are growing as a population as a whole, it is necessary to have efficient management of water resources. This
+                  comparative study explores the state of the art regarding methods and algorithms used in order to detect water leaks in WDNs. All
+                  methods discussed in this comparative study use deep learning, where we focus on approach and methodology. We analyze, discuss
+                  and if needed discuss the methods for leakage detection. These methods consist of acoustic, pressure, and water flow sensor data.
+                  This data is fed to deep learning algorithms. The algorithms analyzed are deep neural networks, convolutional neural networks, and
+                  recurrent neural networks. We come to the conclusion that many of the aforementioned models have the capabilities to solve the
+                  leakage detection task, but they are highly dependent on the form that the input data takes.</p>
                 </div>
-                <div className="plinks"><a href="#" className="plink">PDF ↗</a><a href="#" className="plink">Poster ↗</a></div>
+                <div className="plinks"><a href="https://pure.rug.nl/ws/portalfiles/portal/630834016/proceedings.pdf" target="_blank" className="plink">PDF ↗</a></div>
               </div>
+            </R>
+
+              <R delay={0.27}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2023</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Exploring the cosine similarity for automated relating of architectural issues and emails in mailing lists</div>
+                  <div className="pauthors">B. Pijnacker, J. van der Zwaag and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">In software development, it is important to document architectural design decisions.
+                    However, design decisions are often discussed in multiple places, such as in email lists
+                    or in issue tracking systems. The problem that arises is the fact that some decisions
+                    are hard to get a grasp on since a part of it could be explained in an email and part of
+                    it in an issue. In this research, we have investigated the relationships between design
+                    decisions documented in Jira issues and mailing lists for multiple Apache projects. Our
+                    research applied the cosine similarity measure in order to find relations between the
+                    issues and emails, followed by a qualitative and quantitative analysis that explored the
+                    relationships.
+                    In general, we found that relationships are mostly one-way. A discussion most often
+                    starts with an issue and is followed up upon in an email. The most common relations
+                    were emails that were asking for discussions regarding an issue or emails that were
+                    referencing an issue. Moreover, emails were, in some cases, the cause of the creation of
+                    an issue, which was the only issue-to-email relation we encountered.</p>
+                </div>
+                <div className="plinks"><a href="/research_papers/cosine.pdf" target="_blank" className="plink">PDF ↗</a></div>
+              </div>
+            </R>
+
+              <R delay={0.36}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2022</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Tools for Measuring and Monitoring the Energy Efficiency of Software Systems: A Rapid Review</div>
+                  <div className="pauthors">B. Pijnacker, J. van der Zwaag and <span className="me">J. Pasveer</span></div>
+                  <p className="pabstract">The recent growth of the information and communication technology (ICT) industry has had a significant impact on the environment. This trend is concerning for both
+                  the sustainability of the ICT industry and the global environment. One way to address
+                  this issue is to focus on improving the power efficiency of software. For this purpose,
+                  a software developer requires tools to investigate their software’s power usage.
+                  This paper reviews the literature on available tools for measuring the power efficiency of software and discusses the limitations of these tools. We find that tools can be
+                  categorized by target, granularity, and hardware requirements. One limitation of these
+                  tools is the need for specialized hardware for some measurements. Another limitation
+                  is the accuracy of tools that estimate power usage without specialized hardware.
+                  </p>
+                </div>
+                <div className="plinks"><a href="/research_papers/Rapid_Review__Which_tools_can_I_use_to_measure_and_monitor_the_energy_efficiency_of_my_software_system_.pdf" target="_blank" className="plink">PDF ↗</a></div>
+              </div>
+            </R>
+
+              <R delay={0.45}>
+              <div className="paper-card">
+                <div>
+                  <div className="pmeta"><span className="pyear">2020</span><span className="pvenue"></span></div>
+                  <div className="ptitle">Solutions to large scale DNA and RNA processing</div>
+                  <div className="pauthors">Y. Molema, <span className="me">J. Pasveer</span>, D. Scheepstra, M. Kruijer, W. Haverkort, J. Klooster and R. Wuijster</div>
+                  <p className="pabstract">Big data sets of DNA and RNA can be easily
+                      acquired. However, processing these data-sets, which are in the
+                      petabyte scale, comes with some complications. This report will
+                      discuss how already existing computational solutions can help
+                      with processing large-scale data sets. The best solution found in
+                      this report is cloud computing: it improves the speed, flexibility
+                      and costs of processing data. However, it can compromise privacy.
+                      Map Reduce and Heterogeneous computing were the other
+                      solutions taken into consideration. Life sciences are in need of a
+                      solution, because if a solution is found, further research into the
+                      human body can be carried out. Furthermore, the size of these
+                      data sets will keep growing. This means when no solution can be
+                      found, the problem will become harder to solve.
+                  </p>
+                </div>
+            <div className="plinks">
+              <a href="/research_papers/Research_Paper_SC.pdf" target="_blank" rel="noopener noreferrer" className="plink">PDF ↗</a>
+
+            </div>              </div>
             </R>
 
           </div>
@@ -380,43 +419,16 @@ export default function Nl() {
       <div className="s-divider"/>
       <section className="section" id="summaries">
         <div className="section-inner">
-          <R><p className="s-label">05 / Samenvattingen</p></R>
-          <Words text="Onderzoekssamenvattingen" className="s-heading" delay={0.05}/>
-          <R delay={0.1}><p className="sum-intro">Toegankelijke beschrijvingen van mijn onderzoeksresultaten voor technisch onderlegde maar niet-specialistische lezers.</p></R>
+          <R><p className="s-label">04 / Samenvattingen</p></R>
+          <Words text="Samenvattingen" className="s-heading" delay={0.05}/>
+          <R delay={0.1}><p className="sum-intro">Tijdens mijn studies heb ik meerdere samenvattingen geschreven. Deze zal ik binnenkort publiceren</p></R>
           <div className="sum-grid">
 
             <R delay={0.00}>
               <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Adaptieve quorumgrootte in geo-gedistribueerde Raft-clusters</div><span className="sum-tag">Consensus</span></div>
-                <div className="sum-origin">EuroSys '25</div>
-                <p className="sum-body">In plaats van de quorumgrootte bij initialisatie vast te leggen, stemmen knooppunten om dynamisch te herconfigureren op basis van realtime partitiemeldingen — veiligheid bewaren terwijl staartlatentie wordt verminderd.</p>
-                <a href="#" className="sum-read">Lees volledig →</a>
-              </div>
-            </R>
-
-            <R delay={0.08}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Vergelijking van Raft, Multi-Paxos en EPaxos bij foutinjectie</div><span className="sum-tag">Fouttolerantie</span></div>
-                <div className="sum-origin">MSc Thesis — 2024</div>
-                <p className="sum-body">EPaxos toont superieure doorvoer in brede netwerken, maar de implementatievereenvoudiging van Raft levert betere correctheid tijdens herstel op — een onderscheid dat theoretische analyse neigt te verdoezelen.</p>
-                <a href="#" className="sum-read">Lees volledig →</a>
-              </div>
-            </R>
-
-            <R delay={0.16}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Voorspellende belastingsverdeling via toegangspatroonembeddings</div><span className="sum-tag">Cloudopslag</span></div>
-                <div className="sum-origin">ICDE '23 Workshop</div>
-                <p className="sum-body">Lichte ML-embeddings anticiperen toegangsskew 10–30 seconden van tevoren, zodat de planner tijd heeft voor proactieve herbalancering in plaats van reactieve correctie.</p>
-                <a href="#" className="sum-read">Lees volledig →</a>
-              </div>
-            </R>
-
-            <R delay={0.24}>
-              <div className="sum-card">
-                <div className="sum-head"><div className="sum-title">Waarom Raft-leiderverkiezingen moeilijker zijn dan ze lijken</div><span className="sum-tag">Engineering</span></div>
-                <div className="sum-origin">Technisch Essay — 2025</div>
-                <p className="sum-body">Gerandomiseerde verkiezingstijdlimieten interageren slecht met realistische jitter, asymmetrische vertraging en GC-pauzes — zaken die het Raft-artikel slechts kort behandelt, maar die in productie cruciaal blijken.</p>
+                <div className="sum-head"><div className="sum-title">Voorbeeld</div><span className="sum-tag"></span></div>
+                <div className="sum-origin">Vak</div>
+                <p className="sum-body">Samenvatting</p>
                 <a href="#" className="sum-read">Lees volledig →</a>
               </div>
             </R>

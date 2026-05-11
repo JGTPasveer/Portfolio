@@ -126,7 +126,7 @@ export default function Nl() {
             <Words text="Julian Pasveer" className="hero-name" delay={0.15}/>
             <motion.p className="hero-sub"
               initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.35,duration:0.55}}>
-              Software Engineer &amp; <strong>Tutor</strong>
+              Software Engineer &amp; <strong>Studiebegeleider</strong>
             </motion.p>
             <motion.p className="hero-desc"
               initial={{opacity:0,y:12}} animate={{opacity:1,y:0}} transition={{delay:0.44,duration:0.55}}>
@@ -197,11 +197,11 @@ export default function Nl() {
           <Words text="Technische Expertise" className="s-heading" delay={0.05}/>
           <div className="skills-grid">
             <R delay={0.00}><div className="skill-card"><div className="skill-top"><div className="skill-name">Programmeertalen</div><span className="skill-cat">Kern</span></div><div className="skill-tags"><span className="skill-tag">Java</span><span className="skill-tag">C</span><span className="skill-tag">JavaScript</span><span className="skill-tag">Python</span><span className="skill-tag">C++</span><span className="skill-tag">C#</span></div></div></R>
-            <R delay={0.06}><div className="skill-card"><div className="skill-top"><div className="skill-name">Gedistribueerde Systemen</div><span className="skill-cat">Specialisatie</span></div><div className="skill-tags"><span className="skill-tag">Raft</span><span className="skill-tag">Kafka</span><span className="skill-tag">gRPC</span><span className="skill-tag">etcd</span><span className="skill-tag">ZooKeeper</span></div></div></R>
-            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operaties</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span><span className="skill-tag">AWS</span><span className="skill-tag">Terraform</span></div></div></R>
+            <R delay={0.12}><div className="skill-card"><div className="skill-top"><div className="skill-name">Cloud &amp; Infra</div><span className="skill-cat">Operaties</span></div><div className="skill-tags"><span className="skill-tag">Kubernetes</span><span className="skill-tag">Docker</span></div></div></R>
             <R delay={0.18}><div className="skill-card"><div className="skill-top"><div className="skill-name">Databases</div><span className="skill-cat">Opslag</span></div><div className="skill-tags"><span className="skill-tag">PostgreSQL</span><span className="skill-tag">MongoDB</span><span className="skill-tag">MySQL</span></div></div></R>
             <R delay={0.24}><div className="skill-card"><div className="skill-top"><div className="skill-name">Backend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">REST</span><span className="skill-tag">WebSockets</span></div></div></R>
-            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Onderzoek</div><span className="skill-cat">Academisch</span></div><div className="skill-tags"><span className="skill-tag">Consensus Algorithms</span><span className="skill-tag">CAP Theorem</span></div></div></R>
+            <R delay={0.30}><div className="skill-card"><div className="skill-top"><div className="skill-name">Frontend Engineering</div><span className="skill-cat">Architectuur</span></div><div className="skill-tags"><span className="skill-tag">HTML</span><span className="skill-tag">CSS</span></div></div></R>
+
           </div>
           {/* ── YOUTUBE ── */}
             <R delay={0.4}>
@@ -219,8 +219,8 @@ export default function Nl() {
                 </p>
                 <div className="yt-tags">
                     <span className="yt-tag">Videobewerking</span>
-                    <span className="yt-tag">Premiere Pro</span>
-                    <span className="yt-tag">After Effects</span>
+                    <span className="yt-tag">Da Vinci Resolve</span>
+                    <span className="yt-tag">GIMP</span>
                     <span className="yt-tag">Scripting</span>
                     <span className="yt-tag">Thumbnail Design</span>
                     <span className="yt-tag">SEO & Analytics</span>
@@ -242,12 +242,12 @@ export default function Nl() {
                 <div className="teach-header">
                     <div className="teach-icon">✏</div>
                     <div>
-                    <div className="teach-title">Docent & Tutor</div>
+                    <div className="teach-title">Studiebegeleider</div>
                     <div className="teach-sub-label">Huiswerkbegeleiding · 4,5 Jaar</div>
                     </div>
                 </div>
                 <p className="teach-desc">
-                    Gedurende vier en een half jaar werkte ik als docent en tutor bij een huiswerkbegeleiding instituut, waarbij ik middelbare scholieren begeleidde in vakken als wiskunde, natuurkunde en informatica. De rol ontwikkelde mijn vermogen om individuele leerachterstanden te herkennen, uitleg vlot aan te passen aan de leerling, en geduldig en helder te blijven onder druk — competenties die direct doorwerken in onderzoekscommunicatie en technische begeleiding.
+                    Gedurende vier en een half jaar werkte ik als studiebegeleider bij ASL Huiswerkbegeleiding in Emmen, waarbij ik middelbare scholieren begeleid in vakken als wiskunde, natuurkunde en informatica.
                 </p>
                 <div className="teach-tags">
                     <span className="teach-tag">Wiskunde</span>
@@ -441,89 +441,136 @@ export default function Nl() {
       <div className="s-divider"/>
       <section className="section" id="experience">
         <div className="section-inner">
-          <R><p className="s-label">06 / Achtergrond</p></R>
+          <R><p className="s-label">05 / Achtergrond</p></R>
           <Words text="Opleiding & Ervaring" className="s-heading" delay={0.05}/>
           <div className="tl-cols">
 
             <R>
               <div className="tl-head">Opleiding</div>
               <div className="tl-item">
-                <div className="tl-date">2023 – heden</div>
+                <div className="tl-date">2022 – 2026</div>
                 <div className="tl-body">
-                  <div className="tl-title">MSc Informatica</div>
-                  <div className="tl-place">Universiteit van Edinburgh</div>
-                  <p className="tl-desc">Gespecialiseerd in Software Engineering &amp; Gedistribueerde Systemen. Onderzoek naar consensusprotocollen en fouttolerante systeemontwerp. Verwacht in 2025.</p>
+                  <div className="tl-title">MSc Computing Science</div>
+                  <div className="tl-place">Rijksuniversiteit Groningen</div>
+                  <p className="tl-desc">Gespecialiseerd in Software Engineering &amp; Distributed Systems.</p>
                 </div>
               </div>
               <div className="tl-item">
-                <div className="tl-date">2019 – 2023</div>
+                <div className="tl-date">2018 – 2023</div>
                 <div className="tl-body">
-                  <div className="tl-title">BSc Informatica</div>
-                  <div className="tl-place">Universiteit van Amsterdam</div>
-                  <p className="tl-desc">Cum laude. Scriptie over belastingsverdeling in heterogene cloudomgevingen. Decaanlijst 2022 &amp; 2023.</p>
+                  <div className="tl-title">BSc Computing Science</div>
+                  <div className="tl-place">Rijksuniversiteit Groningen</div>
+                  {/* <p className="tl-desc">GPA 7</p> */}
+                </div>
+              </div>
+               <div className="tl-item">
+                <div className="tl-date">2012 – 2018</div>
+                <div className="tl-body">
+                  <div className="tl-title">Atheneum, Natuur & Techniek</div>
+                  <div className="tl-place">Esdal College Oosterstraat</div>
                 </div>
               </div>
             </R>
 
             <R>
               <div className="tl-head">Werkervaring</div>
+              
               <div className="tl-item">
-                <div className="tl-date">Zomer 2024</div>
+                <div className="tl-date">2021 - heden</div>
                 <div className="tl-body">
-                  <div className="tl-title">Software Engineering Stagiair</div>
-                  <div className="tl-place">Cloudflare · Londen</div>
-                  <p className="tl-desc">Bijgedragen aan de Workers KV gedistribueerde opslaglaag en cachevalidatievertraging met 18% verbeterd door optimalisaties van replicatieprotocollen.</p>
+                  <div className="tl-title">ASL Studiebegeleider</div>
+                  <div className="tl-place">ASL Instituut voor Educatie en Begeleiding, Emmen</div>
+                  <p className="tl-desc">Complexe stof uitleggen aan leerlingen met verschillende achtergronden en niveaus. Het zien van die groei bij leerlingen is wat mij uiteindelijk heeft aangezet tot het volgen van de educatieve master.</p>
                 </div>
               </div>
+
               <div className="tl-item">
-                <div className="tl-date">2022 – 2023</div>
+                <div className="tl-date">2023 – 2025</div>
                 <div className="tl-body">
-                  <div className="tl-title">Backend Engineer (deeltijd)</div>
-                  <div className="tl-place">Catawiki · Amsterdam</div>
-                  <p className="tl-desc">Gebeurtenisgestuurde veilingpijplijnen ontworpen die 40k+ transacties per dag verwerken met sub-100ms p99 latentie in Kafka en Go.</p>
+                  <div className="tl-title">Basic-Fit Gastheer</div>
+                  <div className="tl-place">Basic-Fit Emmen</div>
+                  <p className="tl-desc">Als gastheer bij Basic-Fit was ik het eerste aanspreekpunt voor leden en bezoekers. Hierdoor leerde ik snel schakelen, professioneel blijven onder druk en mensen op hun gemak stellen.</p>
                 </div>
               </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2019</div>
+                <div className="tl-body">
+                  <div className="tl-title">Jumbo Leidinggevende</div>
+                  <div className="tl-place">Jumbo Emmen</div>
+                  <p className="tl-desc">Vanuit mijn rol als vakkenvuller groeide ik door naar een leidinggevende positie, waarbij ik de verantwoordelijkheid droeg voor zowel het team als de winkelprocessen. Het leerde mij beslissingen nemen onder druk en verantwoordelijkheid dragen voor het werk van anderen.</p>
+                </div>
+              </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2018-2019</div>
+                <div className="tl-body">
+                  <div className="tl-title">Vulploegmedewerker Kruidvat</div>
+                  <div className="tl-place">Kruidvat Emmen</div>
+                </div>
+              </div>
+
+              <div className="tl-item">
+                <div className="tl-date">2016 - 2018</div>
+                <div className="tl-body">
+                  <div className="tl-title">Vulploegmedewerker Jumbo</div>
+                  <div className="tl-place">Jumbo Emmen</div>
+                  <p className="tl-desc">Mijn eerste stap in de arbeidsmarkt, waarbij ik leerde werken met deadlines, nauwkeurig te zijn en deel uit te maken van een team.</p>
+                </div>
+              </div>
+
+
             </R>
 
           </div>
         </div>
       </section>
 
-      {/* ── CONTACT ── */}
+     {/* ── CONTACT ── */}
       <div className="s-divider"/>
       <section className="section" id="contact">
         <div className="section-inner">
-          <R><p className="s-label">07 / Contact</p></R>
+          <R><p className="s-label">06 / Contact</p></R>
           <Words text="Neem contact op" className="s-heading" delay={0.05}/>
           <div className="contact-layout">
+
             <R delay={0.1}>
               <p className="contact-intro">
-                Ik verwelkom vragen over <strong>onderzoekssamenwerking</strong>, <strong>stagekansen</strong>, of algemene correspondentie. Neem gerust contact op via een van de onderstaande kanalen.
+                Heb je een vraag? Neem dan contact op via een van de onderstaande kanalen.
               </p>
               <div className="contact-rows">
-                <a href="mailto:julian@example.com" className="c-row"><span className="c-lbl">E-mail</span><span className="c-val">julian@example.com</span></a>
-                <a href="https://github.com/julian" className="c-row"><span className="c-lbl">GitHub</span><span className="c-val">github.com/julian</span></a>
-                <a href="https://linkedin.com/in/julian" className="c-row"><span className="c-lbl">LinkedIn</span><span className="c-val">linkedin.com/in/julian</span></a>
-                <a href="#" className="c-row"><span className="c-lbl">Scholar</span><span className="c-val">Google Scholar</span></a>
+                <a href="https://github.com/JGTPasveer" target="_blank" rel="noopener noreferrer" className="c-row">
+                  <span className="c-lbl">GitHub</span>
+                  <span className="c-val">github.com/JGTPasveer</span>
+                </a>
+                <a href="https://www.linkedin.com/in/julian-pasveer-466ba125a/" target="_blank" rel="noopener noreferrer" className="c-row">
+                  <span className="c-lbl">LinkedIn</span>
+                  <span className="c-val">linkedin.com/in/julian</span>
+                </a>
               </div>
             </R>
-            <R delay={0.18}>
-              <div>
-                <div className="form-g"><label className="form-lbl">Volledige naam</label><input className="form-in" type="text" placeholder="Uw naam"/></div>
-                <div className="form-g"><label className="form-lbl">E-mailadres</label><input className="form-in" type="email" placeholder="uw@email.com"/></div>
-                <div className="form-g"><label className="form-lbl">Bericht</label><textarea className="form-ta" placeholder="Uw bericht…"/></div>
-                <Mag className="btn-p">Verstuur bericht</Mag>
+
+            <R delay={0.25}>
+              <div className="quote-card">
+                <div className="quote-text">
+                  "If you can't explain it <strong>simply</strong>, you don't understand it well enough."
+                </div>
+                <div className="quote-divider"/>
+                <div className="quote-author">
+                  <span className="quote-author-name">Albert Einstein</span>
+                  <span className="quote-author-title">Theoretical Physicist · 1879 – 1955</span>
+                </div>
               </div>
             </R>
+
           </div>
         </div>
       </section>
 
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <div className="fstatus"><div className="fdot"/><span>Open voor kansen</span></div>
-        <span>Julian Vandermeer</span>
-        <span>© {new Date().getFullYear()}</span>
+        <div className="fstatus"><div className="fdot"/><span>Laatste update: 11-05-2026</span></div>
+        <span>Julian Pasveer</span>
       </footer>
     </>
   );

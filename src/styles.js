@@ -383,10 +383,10 @@ body::before {
   .tl-place{font-family:var(--mono);font-size:10px;letter-spacing:0.08em;color:var(--blue);text-transform:uppercase;margin-bottom:7px;}
   .tl-desc{font-size:13px;line-height:1.7;color:var(--text2);font-weight:300;}
 
-  .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:start;}
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px,4vw,64px); align-items: start; }
   .contact-intro{font-size:15px;line-height:1.85;color:var(--text2);margin-bottom:24px;font-weight:300;}
   .contact-intro strong{color:var(--text);font-weight:500;}
-  .contact-rows{display:flex;flex-direction:column;border-top:1px solid var(--border);}
+.contact-rows { display:flex; flex-direction:column; border-top:1px solid var(--border); max-width: 600px; }
   .c-row{display:flex;align-items:center;gap:16px;padding:13px 0;border-bottom:1px solid var(--border);}
   .c-row:hover .c-val{color:var(--blue);}
   .c-lbl{font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);width:68px;flex-shrink:0;}
@@ -442,6 +442,7 @@ body::before {
   min-height: 320px;
   max-height: 420px;
 }
+  
 
 @media (max-width: 768px) {
   .about-img { min-height: 240px; max-height: 300px; }
@@ -453,7 +454,9 @@ body::before {
     .plinks{flex-direction:row;align-items:center;flex-wrap:wrap;gap:6px;} .plink{padding:8px 12px;} .ptitle{font-size:14px;}
     .sum-grid{grid-template-columns:1fr;gap:10px;} .sum-card{padding:18px;} .sum-title{font-size:13px;}
     .tl-cols{grid-template-columns:1fr;gap:40px;} .tl-item{grid-template-columns:58px 1fr;} .tl-date{font-size:9px;padding-right:10px;}
-    .contact-layout{grid-template-columns:1fr;gap:32px;} .contact-intro{font-size:14px;}
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px,4vw,64px); align-items: start; }
+.contact-rows { display:flex; flex-direction:column; border-top:1px solid var(--border); max-width: 600px; }
+
     .c-lbl{width:60px;font-size:9px;} .c-val{font-size:13px;}
     .form-in,.form-ta{font-size:16px;}
     .btn-p{width:100%;text-align:center;padding:14px;}

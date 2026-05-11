@@ -2,7 +2,10 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring, useInView, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import heroImg from "./assets/prof.jpg";
+import aboutImg from "./assets/about.PNG";
+
 import STYLES from "./styles";
+
 
 
 /* ─── HELPERS ───────────────────────────────────────────────────── */
